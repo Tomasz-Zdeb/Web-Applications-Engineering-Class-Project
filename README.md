@@ -36,3 +36,17 @@
 * Design & Development
 * Testing
 * Marketplace
+
+### Web application design process
+
+* Definition of functional requirements
+* Market analysis and project draft
+* Prototyping
+* Interactions definition
+* User experience testing
+
+## References
+
+* [Figma](https://www.figma.com)
+* [Namelix](https://namelix.com)
+* [Pixabay](https://pixabay.com/)
