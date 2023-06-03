@@ -1,0 +1,4 @@
+{
+    "php.executablePath": "./php-8.2.5-Win32-vs16-x64/php.exe",
+    "php.validate.executablePath": "./php-8.2.5-Win32-vs16-x64/php.exe",
+}
