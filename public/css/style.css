@@ -7,101 +7,101 @@
 
 @font-face {
     font-family: 'IBMPlexSans';
-    src: url('../fonts/IBM_Plex_Sans/IBMPlexSans-Regular.ttf');
+    src: url('../fonts/IBM_Plex_Sans/IBMPlexSans-Bold.ttf');
     font-weight: bold;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'IBMPlexSans';
-    src: url('../fonts/IBM_Plex_Sans/IBMPlexSans-Regular.ttf');
+    src: url('../fonts/IBM_Plex_Sans/IBMPlexSans-Italic.ttf');
     font-weight: normal;
     font-style: italic;
 }
 
 @font-face {
     font-family: 'IBMPlexSans';
-    src: url('../fonts/IBM_Plex_Sans/IBMPlexSans-Regular.ttf');
+    src: url('../fonts/IBM_Plex_Sans/IBMPlexSans-BoldItalic.ttf');
     font-weight: bold;
     font-style: italic;
 }
 
-@font-face {
+/* @font-face {
     font-family: 'IBMPlexSans';
-    src: url('../fonts/IBM_Plex_Sans/IBMPlexSans-Regular.ttf');
+    src: url('FILL!');
     font-weight: 200;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'IBMPlexSans';
-    src: url('../fonts/IBM_Plex_Sans/IBMPlexSans-Regular.ttf');
+    src: url('FILL!');
     font-weight: 200;
     font-style: italic;
 }
 
 @font-face {
     font-family: 'IBMPlexSans';
-    src: url('../fonts/IBM_Plex_Sans/IBMPlexSans-Regular.ttf');
+    src: url('FILL!');
     font-weight: 300;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'IBMPlexSans';
-    src: url('../fonts/IBM_Plex_Sans/IBMPlexSans-Regular.ttf');
+    src: url('FILL!');
     font-weight: 300;
     font-style: italic;
 }
 
 @font-face {
     font-family: 'IBMPlexSans';
-    src: url('../fonts/IBM_Plex_Sans/IBMPlexSans-Regular.ttf');
+    src: url('FILL!');
     font-weight: 500;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'IBMPlexSans';
-    src: url('../fonts/IBM_Plex_Sans/IBMPlexSans-Regular.ttf');
+    src: url('FILL!');
     font-weight: 500;
     font-style: italic;
 }
 
 @font-face {
     font-family: 'IBMPlexSans';
-    src: url('../fonts/IBM_Plex_Sans/IBMPlexSans-Regular.ttf');
+    src: url('FILL!');
     font-weight: 600;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'IBMPlexSans';
-    src: url('../fonts/IBM_Plex_Sans/IBMPlexSans-Regular.ttf');
+    src: url('FILL!');
     font-weight: 600;
     font-style: italic;
 }
 
 @font-face {
     font-family: 'IBMPlexSans';
-    src: url('../fonts/IBM_Plex_Sans/IBMPlexSans-Regular.ttf');
+    src: url('FILL!');
     font-weight: bold;
     font-style: italic;
 }
 
 @font-face {
     font-family: 'IBMPlexSans';
-    src: url('../fonts/IBM_Plex_Sans/IBMPlexSans-Regular.ttf');
+    src: url('FILL!');
     font-weight: 100;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'IBMPlexSans';
-    src: url('../fonts/IBM_Plex_Sans/IBMPlexSans-Regular.ttf');
+    src: url('FILL!');
     font-weight: 100;
     font-style: italic;
-}
+} */
 
 body {
     margin: 0%;
@@ -120,8 +120,70 @@ body {
 
 .logo{
     background: #888;
+    width: 20vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 0.5cm;
+    border-radius: 0.3cm;
+    color: #333;
+    padding-left: 0.3cm;
+    padding-right: 0.3cm;
+}
+
+.logo-img{
+    width: 20vh;
 }
 
 .login-container{
     background: #888;
+    width: 20vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    margin-left: 0.5em;
+    border-radius: 0.5em;
+    color: #333;
+}
+
+.logo-header{
+    padding-top: 1em;
+    text-align: center;
+    font-weight: bold;
+    font-size: 2em;
+}
+
+.logo-text{
+    text-align: center;
+    font-weight: bold;
+    font-size: 4em;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.logo-footer{
+    text-align: center;
+    padding-bottom: 0.5em;
+    padding-top: 0.5em;
+}
+
+.login-form{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.login-header{
+    margin-bottom: 0.5em;
+    font-weight: bold;
+    font-size: 2em;
+}
+.login-text{
+    margin-top: 0.5em;
+}
+.login-footer{
+    margin-top: 0.5em;
+    font-size: 0.7em;
 }
