@@ -1,0 +1,9 @@
+.home-container{
+    width: 100vw;
+    height: 100vh;
+    background: #666;
+    margin: 0px
+}
+@media only screen and (max-device-width: 780px){
+
+}
