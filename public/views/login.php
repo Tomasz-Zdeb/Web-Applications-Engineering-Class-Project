@@ -8,6 +8,9 @@
     <div class="container">
         <div class="logo">
             <div class="logo-header">
+                <?php if(isset($message)){
+                    echo $message;
+                }?>
                 Unleash Your Productivity with:
             </div>
             <div class="logo-text">
