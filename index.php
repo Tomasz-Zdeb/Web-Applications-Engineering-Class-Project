@@ -10,5 +10,3 @@ Routing::get('home','DefaultController');
 Routing::post('login','SecurityController');
 
 Routing::run($path);
-
-echo "Hello there";

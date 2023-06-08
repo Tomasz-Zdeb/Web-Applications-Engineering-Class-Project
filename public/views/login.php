@@ -8,11 +8,6 @@
     <div class="container">
         <div class="logo">
             <div class="logo-header">
-                <?php if(isset($messages)){
-                    foreach ($messages as $message){
-                        echo $message;
-                    }
-                }?>
                 Unleash Your Productivity with:
             </div>
             <div class="logo-text">
@@ -26,6 +21,13 @@
         <div class="login-container">
             <div class="login-header">
                 Please log in
+            </div>
+            <div>
+                <?php if(isset($messages)){
+                    foreach ($messages as $message){
+                        echo '<span style="color: red; font-size: 1em;">'.$message.'</span>';
+                    }
+                }?>
             </div>
             <form class="login-form" action="login" method="POST">
                 <input name="email" type="text" placeholder="email@example.com">
