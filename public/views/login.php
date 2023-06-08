@@ -8,8 +8,10 @@
     <div class="container">
         <div class="logo">
             <div class="logo-header">
-                <?php if(isset($message)){
-                    echo $message;
+                <?php if(isset($messages)){
+                    foreach ($messages as $message){
+                        echo $message;
+                    }
                 }?>
                 Unleash Your Productivity with:
             </div>
