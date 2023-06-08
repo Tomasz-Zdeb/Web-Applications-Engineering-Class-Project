@@ -27,10 +27,10 @@
             <div class="login-header">
                 Please log in
             </div>
-            <form class="login-form">
+            <form class="login-form" action="login" method="POST">
                 <input name="email" type="text" placeholder="email@example.com">
                 <input name="password" type="password" placeholder="password">
-                <button>Log In</button>
+                <button type="submit">Log In</button>
             </form>
             <div class="login-text">
                 <span>Don't have an account yet?</span>
