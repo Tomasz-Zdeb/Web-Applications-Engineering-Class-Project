@@ -6,6 +6,11 @@ class SecurityController extends AppController{
     public function login(){
         $user = new User('abc','abc','abc','abc');
 
+
+        if($this->isGet()){
+            return $this->login();
+        }
+
         $email = $_POST['email'];
         $password = $_POST['password'];
 
@@ -17,6 +22,8 @@ class SecurityController extends AppController{
             return $this->render('login',['messages'=>['Password incorrect']]);
         }
 
-        return $this->render('home-dashboard');
+        //return $this->render('home-dashboard');
+        $url = "http://$_SERVER[HTTP_HOST]";
+        header ("Location: {$url}/home");
     }
 }
