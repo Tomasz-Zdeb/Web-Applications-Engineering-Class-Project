@@ -20,7 +20,7 @@
         </div>
         <div class="login-container">
             <div class="login-header">
-                Please log in
+                Please log&nbsp;in
             </div>
             <div>
                 <?php if(isset($messages)){
@@ -36,10 +36,10 @@
             </form>
             <div class="login-text">
                 <span>Don't have an account yet?</span>
-                <a>Sign Up</a>
+                <a>Sign&nbsp;Up</a>
             </div>
             <div class="login-footer">
-                I've forgot my password!
+                I've&nbsp;forgot my&nbsp;password!
             </div>
         </div>
     </div>

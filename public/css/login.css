@@ -1,7 +1,6 @@
 .container{
     width: 100vw;
     height: 100vh;
-    background: #666;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -10,37 +9,37 @@
 
 .logo{
     background: #888;
-    width: 20vw;
+    width: 20em;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-right: 0.5cm;
+    margin-right: 1em;
+    margin-left: 1em;
     border-radius: 0.3cm;
     color: #333;
-    padding-left: 0.3cm;
-    padding-right: 0.3cm;
+    padding: 0.5em;
 }
 
 .logo-img{
-    width: 20vh;
+    width: 5em;
 }
 
 .login-container{
     background: #888;
-    width: 20vw;
+    width: 20em;
     display: flex;
     align-items: center;
     flex-direction: column;
     padding-top: 1em;
     padding-bottom: 1em;
-    margin-left: 0.5em;
+    margin-left: 1em;
+    margin-right: 1em;
     border-radius: 0.5em;
     color: #333;
 }
 
 .logo-header{
-    padding-top: 1em;
     text-align: center;
     font-weight: bold;
     font-size: 2em;
@@ -62,7 +61,20 @@
 .login-form{
     display: flex;
     flex-direction: column;
-    width: 50%;
+    width: 70%;
+    margin-top: 1em;
+}
+
+.login-form>button,.login-form>input{
+    background-color: #bbb  ;
+    border: none;
+    border-radius: 0.2cm;
+    padding: 0.2em;
+    margin: 0.2em;
+}
+
+.login-form>button:hover{
+    background-color: #ccc;
 }
 
 .login-header{
@@ -72,6 +84,7 @@
 }
 .login-text{
     margin-top: 0.5em;
+    text-align: center;
 }
 .login-footer{
     margin-top: 0.5em;
@@ -84,32 +97,41 @@
     font-family: 'Courier New', Courier, monospace;
 }
 
-@media only screen and (max-device-width: 780px){
+@media (max-device-width: 820px){    
     .container{
+        display: flex;
         flex-direction: column;
-        font-size: 24px;
+        overflow: scroll;
+        font-size: 2em;
     }
     .login-container{
-        width: 90%;
-        margin: auto;
-        margin-top: 1em;
-        margin-bottom: 0em;
+        width: 90vw;
+        margin:auto;
     }
     .logo{
-        width: 90%;
+        width: 90vw;
         margin:auto;
-        margin-top: 1em;
-        margin-bottom: 0em;
         padding-left: 0px;
         padding-right: 0px;
+        
     }
     .login-form input{
-        height: 3em;
-        border-radius: 0.3em;
+        height: 2em;
+        font-size: 2em;
+        border-radius: 0.5em;
         border: none;
         margin-bottom: 1em;
     }
     .login-form button{
-        height: 3em;
+        height: 2em;
+        font-size: 2em;
+        border-radius: 0.5em;
+        padding: 0.5em;
+        justify-content: center;
+    }
+
+    .login-form{
+        width: 90%;
+        margin-top: 1em;
     }
 }
