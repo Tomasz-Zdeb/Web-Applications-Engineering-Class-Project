@@ -12,7 +12,31 @@
 
             </header>
             <section>
-                
+            <?php
+            require_once __DIR__ . '/../../src/repository/Database.php';
+
+            $database = new Database();
+            $connection = $database->getConnection();
+
+            // Check if the connection is successful
+            if ($connection) {
+
+                // Test the getAllMessages method
+                $messages = $database->getAllMessages();
+                if (!empty($messages)) {
+                    echo "Messages:<br>";
+                    foreach ($messages as $message) {
+                        echo "ID: " . $message['id'] . ", Message: " . $message['mymsg'] . "<br>";
+                    }
+                } else {
+                    echo "No messages found." . "<br>";
+                }
+            } else {
+                echo "Connection failed.";
+            }
+
+            ?>
+
             </section>
         </nav>
         <main>
