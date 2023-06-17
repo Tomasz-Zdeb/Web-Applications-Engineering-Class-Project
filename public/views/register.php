@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <head>
     <link rel="stylesheet" type="text/css" href="public/css/common.css">
-    <link rel="stylesheet" type="text/css" href="public/css/login.css">
-    <title>SwimS Login</title>
+    <link rel="stylesheet" type="text/css" href="public/css/register.css">
+    <title>SwimS Register</title>
 </head>
 <body>
     <div class="container">
@@ -20,27 +20,13 @@
         </div>
         <div class="login-container">
             <div class="login-header">
-                Please log&nbsp;in
-            </div>
-            <div>
-                <?php if(isset($messages)){
-                    foreach ($messages as $message){
-                        echo '<span style="color: red; font-size: 1em;">'.$message.'</span>';
-                    }
-                }?>
+                Please fill&nbsp;in the registration form
             </div>
             <form class="login-form" action="login" method="POST">
                 <input name="email" type="text" placeholder="email@example.com">
                 <input name="password" type="password" placeholder="password">
-                <button type="submit">Log In</button>
+                <button type="register">Register</button>
             </form>
-            <div class="login-text">
-                <span>Don't have an account yet?</span>
-                <a href="register">Sign&nbsp;Up</a>
-            </div>
-            <div class="login-footer">
-                I've&nbsp;forgot my&nbsp;password!
-            </div>
         </div>
     </div>
 </body>

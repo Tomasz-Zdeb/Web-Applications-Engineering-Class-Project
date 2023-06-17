@@ -10,4 +10,8 @@ class DefaultController extends AppController {
     public function home(){
         $this->render('home-dashboard');
     }
+
+    public function register(){
+        $this->render('register');
+    }
 }
