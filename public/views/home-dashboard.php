@@ -1,8 +1,29 @@
 <!DOCTYPE html>
 <head>
     <link rel="stylesheet" type="text/css" href="public/css/common.css">
-    <link rel="stylesheet" type="text/css" href="public/css/home-dashboard.css">
     <script src="https://kit.fontawesome.com/0c0d4d1ec1.js" crossorigin="anonymous"></script>
+    <style>
+        .home-container{
+            width: 100vw;
+            height: 100vh;
+            background: #666;
+            margin: 0px
+        }
+
+        .home-logo-img{
+            width: 3em;
+        }
+
+        .home-logo-text{
+            font-size: 20px;
+            font-weight: bold;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        @media only screen and (max-device-width: 780px){
+
+        }
+    </style>
     <title>SwimS User Dashboard</title>
 </head>
 <body>
