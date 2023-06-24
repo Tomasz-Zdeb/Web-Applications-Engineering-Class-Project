@@ -4,6 +4,17 @@
     background: #666;
     margin: 0px
 }
+
+.home-logo-img{
+    width: 3em;
+}
+
+.home-logo-text{
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+}
+
 @media only screen and (max-device-width: 780px){
 
 }
