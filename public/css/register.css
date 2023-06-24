@@ -67,6 +67,7 @@
     flex-direction: column;
     width: 70%;
     margin-top: 1em;
+    align-items: center;
 }
 
 .login-header{
@@ -79,6 +80,7 @@
     border-radius: 0.2cm;
     padding: 0.2em;
     margin: 0.2em;
+    width: 100%;
 }
 
 .login-form>button:hover{

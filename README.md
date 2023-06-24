@@ -50,3 +50,4 @@
 * [Figma](https://www.figma.com)
 * [Namelix](https://namelix.com)
 * [Pixabay](https://pixabay.com/)
+* [WSL Docker Issue solution after removal of Docker Desktop](https://stackoverflow.com/questions/67642620/docker-credential-desktop-not-installed-or-not-available-in-path)
