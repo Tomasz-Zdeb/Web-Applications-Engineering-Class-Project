@@ -138,9 +138,30 @@
         }
     }
 
+    /**
+     * Handles user Authentication
+     */
+    class Authentication{
+        protected $config_array;
+        protected $session_data;
+
+        public function __construct($config_array,$session_data){
+            $this->config_array = $config_array;
+            $this->session_data = $session_data;
+        }
+
+        /**
+         * Authorizes user, sets values in session data
+         */
+        public function authenticate(){
+
+        }
+    }
+
     class main{
 
         static function main(){
+            $session_data = [];
             $config = new AuthConfig(
                 wrapped_object: new DbConfig(
                     wrapped_object: new BaseConfig(
@@ -158,9 +179,17 @@
                 auth_cookie_samesite: 'Strict',
                 auth_session_expiration: '60');
 
+            $config_parser = new ConfigParser($config);
+            $config_array = $config_parser->getParsedConfigAssocArray();
+            $authentication = new Authentication($config_array, $session_data);
+
+
+            
+
             echo trim($_SERVER['REQUEST_URI'], '/') . ' <br>';
             echo $_SERVER['REQUEST_URI'] . ' <br>';
             echo $_SERVER['REQUEST_METHOD'];
+            echo '<a href="abc">Go to Test Page</a>';
         }
     }
     main::main();
