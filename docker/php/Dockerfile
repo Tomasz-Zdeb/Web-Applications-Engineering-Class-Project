@@ -1,4 +1,4 @@
-FROM php:7.4.3-fpm-alpine3.11
+FROM php:8.2-fpm-alpine
 
 # Install PostgreSQL PDO extension dependencies
 RUN apk update && apk add --no-cache postgresql-dev
